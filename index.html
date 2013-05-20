@@ -1,15 +1,136 @@
-<script type="text/javascript">
+<!DOCTYPE html>
+<html  lang="en"><head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<title>iMAS - iOS Mobile Application Security</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="iMAS is a set of security components for iOS" />
+<meta name="author" content="The MITRE Corporation" />
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link  rel="stylesheet" href="css/bootstrap-responsive.css" />
+<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+<link rel="shortcut icon" href="ico/imas.png" />
+</head><body>
+<div class="container">
+  <div class="masthead">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="more.html">Components</a></li>
+      <li><a href="mailto:project-imas-list@lists.mitre.org">Contact</a></li>
+    </ul>
+    <h3 class="muted"><a href="index.html"><img src="ico/imas.png" style="width: 1.5em" /> iOS Mobile Application Security</a></h3>
+  </div>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38868530-1']);
-  _gaq.push(['_trackPageview']);
+  <hr />
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  <div class="container-narrow">
+    <div class="jumbotron">
+      <img src="ico/imas.png"/>
+      <h1>Defense for your iOS App</h1>
+      <p class="lead">
+        iMAS helps developers
+        <a href="more.html#encrypted-core-data">encrypt app data</a>,
+        <a href="more.html#app-password">prompt for passwords</a>,
+        <a href="more.html#passcode-check">enforce password complexity</a> and
+        <a href="more.html#security-check">other security policies</a>
+        on iOS devices.
+      </p>
+      <a class="btn btn-large btn-success" href="more.html">Learn More</a>
 
+      <p class="muted text-center" style="margin-top: 2em;">
+        <a class="colorize" href="http://hreader.org/"><img class="gray" src="ico/hreader.png" /><img class="color" src="ico/hreader-color.png" /></a>
+        <span style="width: 4em; display:inline-block">&nbsp;</span>
+        <a class="colorize" href="http://www.mitre.org/"><img class="gray" src="ico/mitre.png" /><img class="color" src="ico/mitre-color.png" /></a>
+      </p>
+    </div>
+  </div>
+  <hr />
+
+
+  <div class="row-fluid marketing">
+    <div class="span6">
+      <h4><a href="more.html#encrypted-core-data">Encryped Core Data</a></h4>
+      <p>
+        Encrypt your app's
+        <a href="http://developer.apple.com/library/ios/#documentation/DataManagement/Conceptual/iPhoneCoreData01/Introduction/Introduction.html">Core Data</a>
+        persistence store
+        (uses <a href="http://sqlcipher.net/">SQLCipher</a>).
+      </p>
+      <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=encrypted-core-data&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=encrypted-core-data&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+
+      <h4><a href="more.html#app-password">App Password</a></h4>
+      <p>
+        Prevent unauthorized users with a password or scrambled keypad
+        prompt.
+      </p>
+      <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=app-password&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=app-password&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+
+      <h4><a href="more.html#secure-foundation">Secure Foundation</a></h4>
+      <p>
+        Add a FIPS 140-2 compliant crypto library
+        (<a href="http://www.openssl.org/">OpenSSL</a>) to your app.
+      </p>
+      <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=securefoundation&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=securefoundation&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+    </div>
+
+    <div class="span6">
+      <h4><a href="more.html#security-check">Security Check</a></h4>
+      <p>
+        Register callbacks if the device is jailbroken or if a debugger is
+        attached.
+      </p>
+      <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=security-check&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=security-check&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+
+      <h4><a href="more.html#passcode-check">Passcode Check</a></h4>
+      <p>
+        Ensure that the device passcode is set and is sufficiently complex.
+      </p>
+      <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=passcode-check&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=passcode-check&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+
+      <h4 class="muted">Coming Soon...</h4>
+      <ul>
+        <li>
+          <strong>Memory Scrubber</strong> - scrub memory on app shutdown
+        </li><li>
+          <strong>Disk Encryption</strong> - app-specific disk encryption
+          (using <a href="http://www.truecrypt.org/">TrueCrypt</a>)
+        </li><li>
+          <strong>Integrity Checker</strong> - ensure the binary has not been
+          tampered
+        </li><li>
+          <strong>Encrypted Code Modules</strong> - prevent code disassembly
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="footer">
+    <p class="pull-right">Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>.</p>
+    <p>&copy; The MITRE Corporation 2013</p>
+  </div>
+</div> <!-- /container -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+$(function () {
+  $('.colorize').hover(function () {
+    $(this)
+      .find('.gray').hide().end()
+      .find('.color').show();
+  }, function () {
+    $(this)
+      .find('.gray').show().end()
+      .find('.color').hide();
+  });
+});
 </script>
-
-<h1>This is a test</h1>
+</body></html>
