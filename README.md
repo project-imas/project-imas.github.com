@@ -1,2 +1,1 @@
-project-imas.github.com
-=======================
+# [project-imas.github.com](http://project-imas.github.io/)
