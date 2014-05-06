@@ -53,6 +53,9 @@
             <a href="#security-check">prevent app tampering</a>, and
             <a href="#passcode-check">enforce enterprise policies</a>
             on iOS devices.
+            </p>
+           <p>
+            Download, compile in, and secure more.
           </p>
         </div>
       </div>
@@ -140,10 +143,10 @@
       <div class="col-md-7">
         <h2>Security <span class="text-muted">at the app level.</span></h2>
         <p class="lead">
-          Currently, iOS does not provide app-level security controls.
+          Currently, iOS has limited app-level security controls.
           iMAS gives you common components to
-          <a href="#app-password">authenticating users</a>,
-          <a href="#encrypted-core-data">encrypt your app data</a>, and
+          <a href="#app-password">authenticate users</a>,
+          <a href="#encrypted-core-data">encrypt your app SQLite data</a>, and
           <a href="#securefoundation">use a secure keychain</a>&mdash;all at the app level.
         </p>
       </div>
@@ -158,7 +161,7 @@
         <img class="img-responsive" alt="iOS Jailbreak"  src="assets/feature-jailbreak.png" />
       </div>
       <div class="col-md-7">
-        <h2>Safegaurd <span class="text-muted">your app runtime.</span></h2>
+        <h2>Safeguard <span class="text-muted">your app runtime.</span></h2>
         <p class="lead">
           Whether you need to
           <a href="#security-check">check for jailbreaks or debuggers</a>,
@@ -269,8 +272,7 @@
       <div class="col-md-4">
         <h4 id="securefoundation"><a href="https://github.com/project-imas/securefoundation/">Secure Foundation</a></h4>
         <p>
-          Third party, open source crypto library
-          (<a href="http://www.openssl.org/">OpenSSL</a>) to your app.
+          Secure components enabling application authentication, secure file storage, and app level file-based keychain to your app.
         </p>
         <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=securefoundation&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
         <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=securefoundation&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
@@ -304,10 +306,18 @@
         <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=memory-security&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
       </div>
       <div class="col-md-4">
+        <h4 id="single-sign-on"><a href="https://github.com/project-imas/single-sign-on/">Single Sign On</a></h4>
+        <p>
+          Simple MDM Single Sign On solution for application level logins.
+        </p>
+        <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=single-sign-on&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+        <iframe src="http://ghbtns.com/github-btn.html?user=project-imas&repo=single-sign-on&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      </div>
+      <div class="col-md-4">
         <h4 class="text-muted">Coming Soon...</h4>
         <ul>
           <li id="app-integrity-check">
-           <strong>Integrity Checker</strong> - ensure the binary has not been tampered
+           <strong>Application Integrity Checker</strong> - ensure the binary has not been tampered
           </li>
           <li>
             <strong>Encrypted Code Modules</strong> - prevent code disassembly
